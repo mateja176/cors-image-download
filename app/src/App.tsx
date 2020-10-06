@@ -52,7 +52,8 @@ function App() {
 
               a.href = dataUrl;
 
-              a.download = 'programmatic-download.png';
+              const [download] = src.split('/').reverse();
+              a.download = download;
 
               a.click();
             });
